@@ -61,7 +61,7 @@ public class CourseController {
 	@RequestMapping("/view2/{courseId}")
 	public String viewCourse2(@PathVariable("courseId") Integer courseId,
 			Map<String, Object> model) {
-		
+//		这里为毛要定义成Map ？？？
 		log.debug("In viewCourse2, courseId = {}", courseId);
 		Course course = courseService.getCoursebyId(courseId);
 		model.put("course",course);
